@@ -22,3 +22,9 @@ function getBalance() {
     const balance = Number(document.querySelector('#balance').innerText);
     return balance;
 };
+
+
+const logoutBtn = getElement('#logout-btn');
+logoutBtn.addEventListener("click", () => {
+    window.location.replace('./index.html');
+});
