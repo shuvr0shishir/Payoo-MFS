@@ -29,7 +29,70 @@
         }
     </style>
 </head>
-<body>
-    Payoo | Home
+
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+
+    <header class="border-b border-gray-300">
+        <!-- Navbar -->
+        <section class="w-11/12 mx-auto py-4 flex justify-between items-center">
+            <div class="left flex gap-2">
+                <div class="logo w-[60px]">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="balace-info">
+                    <h2 class="font-bold text-xl">$ <span id="balance">45000</span></h2>
+                    <p class="text-neutral/50 text-sm">Available Balance</p>
+                </div>
+            </div>
+            <div class="right">
+                <button class="btn  btn-soft text-neutral/70 ">
+                    <a href="./index.html"><i class="fa-solid fa-arrow-right-from-bracket rotate-180 "></i> Logout</a>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Dashboard -->
+        <section class="w-11/12 mx-auto py-10 space-y-4">
+            <h2 class="font-bold text-[27px]">Welcome to Pay<span class="text-[#7460FF]">oo</span></h2>
+            <p class="text-neutral/50 line ">Enjoy easy and convenient financial services with us. Cashout charge is low
+                and Efficient.</p>
+
+            <div class="buttons grid grid-cols-3 gap-4 pt-5 ">
+                <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <img src="./assets/opt-1.png" alt="">
+                    <p>Add Money</p>
+                </button>
+                <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <img src="./assets/opt-2.png" alt="">
+                    <p>Cashout</p>
+                </button>
+                <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <img src="./assets/opt-3.png" alt="">
+                    <p>Send Money</p>
+                </button>
+                <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <img src="./assets/opt-4.png" alt="">
+                    <p>Get Bonus</p>
+                </button>
+                <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <img src="./assets/opt-5.png" alt="">
+                    <p>Pay Bill</p>
+                </button>
+                <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <img src="./assets/opt-6.png" alt="">
+                    <p>Transactions</p>
+                </button>
+            </div>
+        </section>
+        
+
+
+    </main>
+
+
+
 </body>
+
 </html>
