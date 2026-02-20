@@ -1,4 +1,4 @@
-// login functionality
+// Login functionality
 
 const loginBtn = document.getElementById('login-btn');
 loginBtn.addEventListener('click', () => {
@@ -8,14 +8,14 @@ loginBtn.addEventListener('click', () => {
         alert('Input Number And Password.');
     } else if (numberInput.value == '01234567890' && pinInput.value == '1234') {
         window.location.assign('./home.html');
-        alert('Login Successful...');
+        // alert('Login Successful...');
     } else {
         if (numberInput.value != '01234567890') {
             alert('Login Failed! NUMBER is not Registered.');
         } else if (pinInput.value != '1234') {
             alert('Login Failed! PIN Wrong');
         }
+        numberInput.value = '';
+        pinInput.value = '';
     }
-    numberInput.value = '';
-    pinInput.value = '';
-})
+});
