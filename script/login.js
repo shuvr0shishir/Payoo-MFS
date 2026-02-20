@@ -1,21 +1,24 @@
 // Login functionality
 
-const loginBtn = document.getElementById('login-btn');
+const loginBtn = getElement('#login-btn');
+
 loginBtn.addEventListener('click', () => {
-    const numberInput = document.getElementById('number-input');
-    const pinInput = document.getElementById('pin-input');
+
+    const numberInput = getElement('#number-input');
+    const pinInput = getElement('#pin-input');
+
     if (numberInput.value === '' && numberInput.value === '') {
         alert('Input Number And Password.');
-    } else if (numberInput.value == '01234567890' && pinInput.value == '1234') {
+    } else if (numberInput.value === payooNumber && pinInput.value === payooPassword) {
         window.location.assign('./home.html');
         // alert('Login Successful...');
     } else {
-        if (numberInput.value != '01234567890') {
-            alert('Login Failed! NUMBER is not Registered.');
-        } else if (pinInput.value != '1234') {
-            alert('Login Failed! PIN Wrong');
+        if (numberInput.value !== payooNumber) {
+            alert('Login Failed! NUMBER is not Registered!');
+            numberInput.value = '';
+        } else if (pinInput.value !== payooPassword) {
+            alert('Login Failed! PIN Invalid!');
         }
-        numberInput.value = '';
         pinInput.value = '';
     }
 });

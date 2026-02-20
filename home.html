@@ -30,29 +30,29 @@
     </style>
 </head>
 
-<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+<body class="min-h-screen max-w-md  mx-auto">
 
-    <header class="border-b border-gray-300 bg-base-100">
+    <header class="border-b border-gray-300 bg-white/30 backdrop-blur-md sticky top-0 z-50">
         <!-- Navbar -->
-        <section class="w-11/12 mx-auto py-4 flex justify-between items-center">
+        <section class="w-11/12 mx-auto py-4 flex justify-between items-center ">
             <div class="left flex gap-2">
                 <div class="logo w-[60px]">
                     <img src="./assets/logo.png" alt="">
                 </div>
                 <div class="balace-info">
-                    <h2 class="font-bold text-xl">$ <span id="balance">45000</span></h2>
+                    <h2 class="font-bold text-xl">$ <span id="balance">55000</span></h2>
                     <p class="text-neutral/50 text-sm">Available Balance</p>
                 </div>
             </div>
             <div class="right">
-                <button class="btn  btn-soft text-neutral/70 ">
+                <button class="btn btn-primary hover:text-white btn-soft text-neutral/70 ">
                     <a href="./index.html"><i class="fa-solid fa-arrow-right-from-bracket rotate-180 "></i> Logout</a>
                 </button>
             </div>
         </section>
     </header>
 
-    <main>
+    <main class="bg-base-200">
         <!-- Dashboard -->
         <section class="bg-base-100 rounded-b-3xl">
             <div class="w-11/12 mx-auto py-8 space-y-4 ">
@@ -101,33 +101,37 @@
                         <fieldset class="fieldset">
                             <!-- agent  -->
                             <label class="label text-neutral/70 font-medium text-base ">Agent Number</label>
-                            <input id="cashout-number" maxlength="11" minlength="11" type="text"
+                            <input id="cashout-number-input" maxlength="11" minlength="11" type="text"
                                 class="input rounded-full bg-base-200 outline-purple-900 border-none w-full p-5 "
                                 placeholder="Enter 11 digit number" />
 
                             <!-- amount -->
                             <label class="label text-neutral/70 font-medium text-base pt-4">Amount</label>
-                            <input id="cashout-amount" type="text"
+                            <input id="cashout-amount-input" type="text"
                                 class="input rounded-full bg-base-200 outline-purple-900 border-none w-full p-5 "
                                 placeholder="Enter amount to withdraw" />
 
                             <!-- pin -->
                             <label class="label text-neutral/70 font-medium text-base pt-4">Pin Number</label>
-                            <input id="cashout-pin" maxlength="4" minlength="4" type="password"
+                            <input id="cashout-pin-input" maxlength="4" minlength="4" type="password"
                                 class="input rounded-full bg-base-200 outline-purple-900 border-none w-full p-5 "
                                 placeholder="Enter 4 digit pin number" />
 
                             <button id="cashout-btn"
-                                class="btn btn-primary mt-5 rounded-full text-base font-semibold w-full p-5 text-white">Withdraw Money</button>
+                                class="btn btn-primary mt-5 rounded-full text-base font-semibold w-full p-5 text-white">Withdraw
+                                Money
+                            </button>
                         </fieldset>
                     </div>
                 </div>
             </div>
         </section>
 
+
     </main>
 
 
+    <script src="./script/machine.js"></script>
     <script src="./script/cashout.js"></script>
 </body>
 
