@@ -31,8 +31,8 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <section id="login">
-        <div class="logo max-w-60 mx-auto">
+    <section id="login" >
+        <div class="logo max-w-60 mx-auto pt-36">
             <img src="./assets/Logo-full.png" alt="Logo">
         </div>
         <div class="form pt-8 ">
@@ -40,16 +40,16 @@
                 <div class="card-body">
                     <fieldset class="fieldset">
                         <label class="label text-neutral font-medium text-base ">Mobile Number</label>
-                        <input maxlength="11" minlength="11" type="text"
-                            class="input rounded-full bg-base-200 outline-purple-900 border-none"
+                        <input id="number-input" maxlength="11" minlength="11" type="text"
+                            class="input rounded-full bg-base-200 outline-purple-900 border-none w-[336px] p-5 "
                             placeholder="Enter your number" />
 
                         <label class="label text-neutral font-medium text-base pt-4">4 Digit Pin</label>
-                        <input maxlength="4" minlength="4" type="password"
-                            class="input rounded-full bg-base-200 outline-purple-900 border-none"
+                        <input id="pin-input" maxlength="4" minlength="4" type="password"
+                            class="input rounded-full bg-base-200 outline-purple-900 border-none w-[336px] p-5 "
                             placeholder="Enter 4 Digit Pin" />
 
-                        <button class="btn btn-primary mt-4 rounded-full text-base font-semibold">Login</button>
+                        <button id="login-btn" class="btn btn-primary mt-4 rounded-full text-base font-semibold w-[336px] p-5 text-white">Login</buttoni>
                     </fieldset>
                 </div>
             </div>
