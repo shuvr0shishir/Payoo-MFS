@@ -1,4 +1,5 @@
-//* Cashout functionality
+// Cashout functionality
+
 let balance = getBalance();
 const balanceElement = getElement('#balance');
 
