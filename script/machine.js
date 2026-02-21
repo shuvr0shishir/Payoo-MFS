@@ -29,6 +29,13 @@ function setBalance(newBalance) {
     balanceElement.innerText = newBalance;
 };
 
+function showOnly(parameter) {
+    const addMoney = getElement('#add-money');
+    const cashout = getElement('#cashout');
 
-// balance
-let balance = getBalance();
+    addMoney.classList.add('hidden');
+    cashout.classList.add('hidden');
+
+    const selected = getElement(parameter);
+    selected.classList.remove('hidden');
+};

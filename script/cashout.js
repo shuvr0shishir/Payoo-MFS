@@ -43,7 +43,7 @@ logoutBtn.addEventListener('click', () => {
     window.location.replace('./index.html');
 });
 
-// *** my first code
+// *** first code
 
 // const balanceElement = getElement('#balance');
 // let balance = Number(getText('#balance'));

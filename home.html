@@ -62,11 +62,11 @@
                     and Efficient.</p>
 
                 <div class="buttons grid grid-cols-3 gap-4 pt-5 ">
-                    <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <button onclick= "showOnly('#add-money')" class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
                         <img src="./assets/opt-1.png" alt="">
                         <p>Add Money</p>
                     </button>
-                    <button class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
+                    <button onclick= "showOnly('#cashout')" class="btn btn-primary btn-soft flex-col h-full py-4 rounded-xl">
                         <img src="./assets/opt-2.png" alt="">
                         <p>Cashout</p>
                     </button>
@@ -91,7 +91,7 @@
         </section>
 
         <!-- Add Money -->
-        <section id="add-money" class="w-11/12 mx-auto py-5">
+        <section id="add-money" class="w-11/12 mx-auto py-5 ">
             <h2 class="font-bold text-xl">Add Money</h2>
             <!-- input form -->
             <div class="form pt-4 ">
@@ -137,7 +137,7 @@
         </section>
 
         <!-- Cashout -->
-        <section id="cashout" class="w-11/12 mx-auto py-5 ">
+        <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
             <h2 class="font-bold text-xl">Cashout</h2>
             <!-- input form -->
             <div class="form pt-4 ">
@@ -171,7 +171,6 @@
                 </div>
             </div>
         </section>
-
 
     </main>
 

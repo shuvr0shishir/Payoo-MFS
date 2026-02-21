@@ -1,5 +1,8 @@
-// Add money functionality
+// Main balance
+let balance = getBalance();
 
+
+// Add money functionality
 const addMoneyBtn = getElement('#add-money-btn');
 addMoneyBtn.addEventListener("click", () => {
     const bankAccount = getValue('#add-money-bank');
@@ -32,7 +35,6 @@ addMoneyBtn.addEventListener("click", () => {
 
     balance += Number(addMoneyAmount);
     setBalance(balance);
-
 
     getElement('#add-money-bank').selectedIndex = 0;
     getElement('#add-money-number').value = '';
