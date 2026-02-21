@@ -1,7 +1,5 @@
 // Cashout functionality
 
-let balance = getBalance();
-
 const cashoutNumberElement = getElement('#cashout-number-input');
 const cashoutAmountElement = getElement('#cashout-amount-input');
 const cashoutPinElement = getElement('#cashout-pin-input');

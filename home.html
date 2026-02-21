@@ -100,7 +100,7 @@
                         <fieldset class="fieldset">
                             <!-- Select Bank -->
                             <label class="label text-neutral/70 font-medium text-base ">Select A Bank</label>
-                            <select class="select rounded-full bg-base-200 text-neutral-600 outline-purple-900 border-none w-full">
+                            <select id="add-money-bank" class="select rounded-full bg-base-200 text-neutral-600 outline-purple-900 border-none w-full">
                                 <option disabled selected>Select a bank</option>
                                 <option>BRAC bank</option>
                                 <option>Dutch Bangla Bank</option>
@@ -109,7 +109,7 @@
                                 <option>EBL Bank</option>
                             </select>
 
-                            <!-- agent  -->
+                            <!-- add money number  -->
                             <label class="label text-neutral/70 font-medium text-base  pt-4">Bank Account Number</label>
                             <input id="add-money-number" maxlength="11" minlength="11" type="text"
                                 class="input rounded-full bg-base-200 outline-purple-900 border-none w-full p-5 "
@@ -137,7 +137,7 @@
         </section>
 
         <!-- Cashout -->
-        <section class="w-11/12 mx-auto py-5 hidden">
+        <section id="cashout" class="w-11/12 mx-auto py-5 ">
             <h2 class="font-bold text-xl">Cashout</h2>
             <!-- input form -->
             <div class="form pt-4 ">

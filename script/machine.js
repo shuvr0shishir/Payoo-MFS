@@ -2,6 +2,7 @@
 const payooNumber = '12345678910';
 const payooPassword = '1234';
 
+
 // Useful Functions
 function getElement (parameter){
     const input = document.querySelector(parameter);
@@ -27,3 +28,7 @@ function setBalance(newBalance) {
     const balanceElement = document.querySelector('#balance');
     balanceElement.innerText = newBalance;
 };
+
+
+// balance
+let balance = getBalance();
