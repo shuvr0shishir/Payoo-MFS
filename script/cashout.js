@@ -1,7 +1,6 @@
 // Cashout functionality
 
 let balance = getBalance();
-const balanceElement = getElement('#balance');
 
 const cashoutNumberElement = getElement('#cashout-number-input');
 const cashoutAmountElement = getElement('#cashout-amount-input');
@@ -34,14 +33,17 @@ cashoutBtnElement.addEventListener("click", () => {
     alert("Cashout Successful");
 
     balance -= cashoutAmount;
-    balanceElement.innerText = balance;
+    setBalance(balance);
 
     cashoutNumberElement.value = '';
     cashoutAmountElement.value = '';
     cashoutPinElement.value = '';
 });
 
-
+const logoutBtn = getElement('#logout-btn');
+logoutBtn.addEventListener('click', () => {
+    window.location.replace('./index.html');
+});
 
 // *** my first code
 

@@ -23,8 +23,7 @@ function getBalance() {
     return balance;
 };
 
-
-const logoutBtn = getElement('#logout-btn');
-logoutBtn.addEventListener("click", () => {
-    window.location.replace('./index.html');
-});
+function setBalance(newBalance) {
+    const balanceElement = document.querySelector('#balance');
+    balanceElement.innerText = newBalance;
+};
